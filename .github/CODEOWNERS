@@ -1,45 +1,28 @@
-## GitHub docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
-##
-## CODEOWNERS style rules:
-## 1. Prefer team ownership over individual user ownership.
-## 2. GBT-related team should be listed first.
-## 3. Try to keep paths alphabetically sorted.
-## 4. List individual owners last.
-##
 
-# bt-unassigned-maintainers must be the first owner
-# All directories that are not explicitly listed below are considered
-# unassigned. This means that the ownership may be unknown, lost or
-# mixed across several groups.
-* @gradle/bt-unassigned-maintainers
-
-# Core automation platform (core/execution)
-subprojects/build-cache/                    @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/build-cache-base/               @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/build-cache-http/               @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/build-cache-packaging/          @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/build-operations/               @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/build-profile/                  @gradle/bt-execution
-subprojects/execution/                      @gradle/bt-execution
-subprojects/file-watching/                  @gradle/bt-execution
-subprojects/files/                          @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/functional/                     @gradle/bt-execution @bamboo
-subprojects/hashing/                        @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/snapshots/                      @gradle/bt-execution @gradle/bt-ge-build-cache
-subprojects/worker-processes/               @gradle/bt-execution
-subprojects/workers/                        @gradle/bt-execution
+subprojects/build-cache-http/               
+subprojects/build-cache-packaging/          
+subprojects/build-operations/               
+subprojects/build-profile/                  
+subprojects/execution/                      
+subprojects/file-watching/                  
+subprojects/files/                         
+subprojects/functional/                     
+subprojects/hashing/                        
+subprojects/snapshots/                      
+subprojects/worker-processes/     
+subprojects/workers/                
 
 # Core automation platform (core/configuration)
-subprojects/api-metadata/                       @gradle/bt-configuration-cache
-subprojects/base-annotations/                   @gradle/bt-configuration-cache
-subprojects/base-services-groovy/               @gradle/bt-configuration-cache
-subprojects/configuration-cache/                @gradle/bt-configuration-cache
-subprojects/file-collections/                   @gradle/bt-configuration-cache
-subprojects/instrumentation-agent/              @gradle/bt-configuration-cache
-subprojects/internal-instrumentation-api/       @gradle/bt-configuration-cache
-subprojects/internal-instrumentation-processor/ @gradle/bt-configuration-cache
-subprojects/model-core/                         @gradle/bt-configuration-cache
-subprojects/model-groovy/                       @gradle/bt-configuration-cache
+subprojects/api-metadata/                       
+subprojects/base-annotations/                   
+subprojects/base-services-groovy/               
+subprojects/configuration-cache/                
+subprojects/file-collections/                 
+subprojects/instrumentation-agent/              
+subprojects/internal-instrumentation-api/       
+subprojects/internal-instrumentation-processor/
+subprojects/model-core/                         
+subprojects/model-groovy/                       
 
 # Core automation platform (Kotlin DSL)
 build-logic/kotlin-dsl/                                     @gradle/bt-kotlin-dsl-maintainers
