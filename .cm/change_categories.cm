@@ -181,16 +181,17 @@ platforms:
   - gradle_enterprise:
     name: 'gradle_enterprise'
     subprojects:
-      - 'subprojects/build-scan-performance/'
-      - 'subprojects/enterprise/'
-      - 'subprojects/enterprise-logging/'
-      - 'subprojects/enterprise-operations/'
-      - 'subprojects/enterprise-workers/'
+      - 'platforms/enterprise/enterprise/'
+      - 'platforms/enterprise/enterprise-logging/'
+      - 'platforms/enterprise/enterprise-operations/'
+      - 'platforms/enterprise/enterprise-plugin-performance/'
+      - 'platforms/enterprise/enterprise-workers/'
   - ide:
     name: 'ide'
     subprojects:
       - 'platforms/ide/'
       - 'subprojects/ide/'
+      - 'platforms/ide/ide-plugins/'
       - 'subprojects/tooling-api/'
       - 'subprojects/tooling-api-builders/'
   - jvm:
@@ -216,12 +217,12 @@ platforms:
     name: 'kotlin_dsl'
     subprojects:
       - 'build-logic/kotlin-dsl/'
-      - 'subprojects/kotlin-dsl/'
-      - 'subprojects/kotlin-dsl-integ-tests/'
-      - 'subprojects/kotlin-dsl-plugins/'
-      - 'subprojects/kotlin-dsl-provider-plugins/'
-      - 'subprojects/kotlin-dsl-tooling-builders/'
-      - 'subprojects/kotlin-dsl-tooling-models/'
+      - 'platforms/core-configuration/kotlin-dsl/'
+      - 'platforms/core-configuration/kotlin-dsl-integ-tests/'
+      - 'platforms/core-configuration/kotlin-dsl-plugins/'
+      - 'platforms/core-configuration/kotlin-dsl-provider-plugins/'
+      - 'platforms/core-configuration/kotlin-dsl-tooling-builders/'
+      - 'platforms/core-configuration/kotlin-dsl-tooling-models/'
   - release_coordination:
     name: 'release_coordination'
     subprojects:
@@ -265,9 +266,9 @@ teams:
       - 'blindpirate'
   execution:
     members:
-      - 'asodja'
-      - 'lptr'
-      - 'FrauBoes'
+      - 'asodja-DISABLED'
+      - 'lptr-DISABLED'
+      - 'FrauBoes-DISABLED'
   ide:
     members:
       - 'hegyibalint'
